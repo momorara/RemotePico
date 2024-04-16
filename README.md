@@ -8,7 +8,7 @@ RaspberryPi picoで学習リモコンを作ります。
 　
 
 <h4><<概要>></h4>
-　Raspberry Pi picoWを使った学習リモコン<br>
+　Raspberry Pi picoを使った学習リモコン<br>
 　5つのタクトスイッチにリモコン信号を記憶できます。<br>
   乾電池で動作します。<br>
 　すべてのソースプログラムを開示いたします。<br>
