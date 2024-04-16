@@ -11,7 +11,7 @@ https://github.com/meloncookie/RemotePy/tree/main/micropython/RP2040/FromV1_17
 UpyIrRx.py
 UpyIrTx.py
 
-をpicoにアップロードして下さい。
+をダウンロードしてpicoにアップロードして下さい。
 
 Thonnyで動作をさせる場合は、
 RemotyPico_02.py
