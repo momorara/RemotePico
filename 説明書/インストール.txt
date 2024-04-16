@@ -1,9 +1,12 @@
 インストール
 
+**　picoのファームウェアは「RPI_PICO-20220618-v1.19.1.uf2」を使用して下さい。
+https://micropython.org/download/RPI_PICO/
+
+
 核となるプログラムはmeloncookieさんの
 
 https://github.com/meloncookie/RemotePy/tree/main
-
 https://github.com/meloncookie/RemotePy/tree/main/micropython/RP2040/FromV1_17
 
 を使います。
