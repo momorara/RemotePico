@@ -47,3 +47,5 @@ calibrate_list_bytes = json.dumps(loaded_list[1:]).encode('utf-8')  # JSON文字
 tx.send(calibrate_list_bytes)  # バイト列を送信
 
 print(loaded_list)
+
+tx.send(loaded_list)
