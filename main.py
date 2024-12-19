@@ -8,14 +8,24 @@
 2024/04/13  電池駆動用に最初のLED点滅を短く
             信号読み取り失敗時にLED点滅する
 2024/04/13  電池駆動を考慮して、ディープスリープを考えてみる
-    v03     Deepsleepからの復帰のためNo5のスイッチを復帰用に設定した
+    v03     Deepsleepからの復帰のためNo5のスイッチを復帰用に設定した interrupt_handlerを使用
             このため、記憶できる信号は5つになる
             DeepSleepTime = 10秒 間何もしないとDeepSleepに入る、その時LEDが短く点滅する
+2024/12/07  No5のスイッチを復帰用にするのをやめて、全てのボタンを学習用とする
+            Deepsleepを30秒とする
 
-RemotePico_03.py
+
+79-108行は組み立て後のハードウェアテストプログラムです。
+#を消して、順番にテストしてください。
+
+このプログラムはディープスリープを使用しているので、Thonnyでは動作しません。
+スタンドアローンで実行するには、ファィル名をmain.pyにして電源を繋いでください。      
+
+
+RemotePico_04.py
 """
 main_py = 1 # 1の時はDeepSleepを有効にする。
-DeepSleepTime = 10 #Deepsleepに入るまでの時間(秒)
+DeepSleepTime = 30 #Deepsleepに入るまでの時間(秒)
 
 
 import time
@@ -28,7 +38,7 @@ rx_GPIO = 1
 # 表示用+ED　pin設定
 display_LED = 0
 # スイッチのpin設定
-sw_n = 5 # swの数
+sw_n = 6 # swの数 6個全て
 sw_pin = [13,15,10,12,14,11] # swのGPIO pin
 # パターンでプラスが繋がっているため
 dumy = Pin(26, Pin.IN)
@@ -64,9 +74,10 @@ SW[1] = Pin(sw_pin[1], Pin.IN, Pin.PULL_UP)
 SW[2] = Pin(sw_pin[2], Pin.IN, Pin.PULL_UP)
 SW[3] = Pin(sw_pin[3], Pin.IN, Pin.PULL_UP)
 SW[4] = Pin(sw_pin[4], Pin.IN, Pin.PULL_UP)
-#SW[5] = Pin(sw_pin[5], Pin.IN, Pin.PULL_UP)
+SW[5] = Pin(sw_pin[5], Pin.IN, Pin.PULL_UP)
 
-pindeep = Pin(11, Pin.IN, Pin.PULL_UP)
+# # deepsleepからの復帰用
+# pindeep = Pin(11, Pin.IN, Pin.PULL_UP)
 
 # sw テスト　確認できたらコメントアウト
 # while True:
@@ -104,14 +115,15 @@ pindeep = Pin(11, Pin.IN, Pin.PULL_UP)
 # on_sw_no 押されたswの番号 swの番号は0から始まり基板の表記は0,1,2,3,4,5となっています。
 # on_sw_mode 「長押し」or「チョン押し」
 
-def interrupt_handler(pindeep):
-    if main_py == 1:
-        # 割り込みが発生したときの処理をここに記述する
-        print("deep sleep wakeUp ok")
-        reset()
-    pass
-# GPIOピンの割り込みを設定
-pindeep.irq(trigger=Pin.IRQ_FALLING, handler=interrupt_handler)
+# # deepsleepからの復帰用  v04で復帰はやめた
+# def interrupt_handler(pindeep):
+#     if main_py == 1:
+#         # 割り込みが発生したときの処理をここに記述する
+#         print("deep sleep wakeUp ok")
+#         reset()
+#     pass
+# # GPIOピンの割り込みを設定
+# pindeep.irq(trigger=Pin.IRQ_FALLING, handler=interrupt_handler)
 
 # microPythonにはファィルコピーのコマンドが無いみたいなので作る
 def copy_file(source, destination):
@@ -245,5 +257,5 @@ if __name__=='__main__':
     try:
         main()
     except:
-        pass
+        passa
     
