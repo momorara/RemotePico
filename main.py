@@ -10,7 +10,7 @@
 2024/04/13  電池駆動を考慮して、ディープスリープを考えてみる
     v03     Deepsleepからの復帰のためNo5のスイッチを復帰用に設定した interrupt_handlerを使用
             このため、記憶できる信号は5つになる
-            DeepSleepTime = 10秒 間何もしないとDeepSleepに入る、その時LEDが短く点滅する
+            DeepSleepTime 秒間何もしないとDeepSleepに入る、その時LEDが短く点滅する
 2024/12/07  No5のスイッチを復帰用にするのをやめて、全てのボタンを学習用とする
             Deepsleepを30秒とする
 
@@ -25,7 +25,7 @@
 RemotePico_04.py
 """
 main_py = 1 # 1の時はDeepSleepを有効にする。
-DeepSleepTime = 30 #Deepsleepに入るまでの時間(秒)
+DeepSleepTime = 60 #Deepsleepに入るまでの時間(秒)
 
 
 import time
