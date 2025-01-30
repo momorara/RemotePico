@@ -24,7 +24,7 @@
 
 RemotePico_04.py
 """
-main_py = 1 # 1の時はDeepSleepを有効にする。
+main_py = 5 # 1の時はDeepSleepを有効にする。
 DeepSleepTime = 60 #Deepsleepに入るまでの時間(秒)
 
 
