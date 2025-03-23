@@ -1,6 +1,6 @@
 # RemotePico
 
-RemotePy for pico
+RemotePy for pico 
 
 
 プログラム概要
