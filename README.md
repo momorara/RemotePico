@@ -37,6 +37,7 @@ https://micropython.org/download/RPI_PICO/ <br>
 <h4><<メンテナンス情報>></h4>
 使っていて、DeepSleepに入る時間が10秒では短すぎると感じたので、現状5分にしています。
 mainの頭の方で設定できるので、自由に設定してください。<br>
+2025/4/2　表示用LED制限抵抗を 4.7kΩ or 5.6kΩ とした。<br>
 
 <h4><<サポート窓口>></h4>
   メールアドレスが　tkj-works@mbr.nifty.com に変更になっています。<br>
