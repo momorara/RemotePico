@@ -15,8 +15,8 @@ B. そのリポジトリに
 　　web_RemotePicoW.py
 　　requirements.txt
 　　を保存する。
-c. streamlitでweb_RemotePicoW.pyを指定し、
-　　URLを設定して、でブロイする。
-d. secrets.tomlをpicoWと同じ設定とする
-e. streamlitで設定でSecretsにsecrets.tomlの内容をコピーする。
+c. secrets.tomlをpicoWと同じ設定とする
+d. streamlitでweb_RemotePicoW.pyを指定し、URLを設定。
+e. アドバンス設定でSecretsにsecrets.tomlの内容をコピーする。
 　  (注:secrets.tomlはgithubには載せないこと)
+F. デブロイする。
