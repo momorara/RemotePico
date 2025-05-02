@@ -18,14 +18,14 @@ def ID_PASS():
 def secret_keys():
     # 暗号化キー
     # 同じアルハァベットがないようにする
-    henkan = "abcdefghijklmnopqrstuvwxyz"
+    henkan = "opqrstuvwxyzabcdefghijklmn"
 
     # この文字列が受信した文字列のzの後についてなければ、エラーとする
     # エラーの仕方は、時間mmをおかしな時間に変更することでおこなう
-    sec_code_org = "196011"
+    sec_code_org = "test1"
 
     # mqttのアドレスのようなもの
-    MQTT_TOPIC = b"tkj/remote/2025/sw012345"  # 文字列ではなくバイト列にすること
+    MQTT_TOPIC = b"tkj/remote/2025/test123"  # 文字列ではなくバイト列にすること
 
     return henkan,sec_code_org,MQTT_TOPIC
 

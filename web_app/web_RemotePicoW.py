@@ -37,7 +37,7 @@ topic = st.secrets["secret_keys"]["topic"]
 
 # 設定値
 broker = "broker.hivemq.com"          # 無料mqttブローカー
-Web_title = 'WebRemote v30'
+Web_title = 'WebRemote v40'
 
 # スイッチの名称変更が可能です。
 sw_name0  = 'SW-0 @ RemotePico'
