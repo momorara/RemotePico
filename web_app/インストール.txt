@@ -1,0 +1,22 @@
+picoW側
+
+スタンドアローンでの動作を確認した後
+a. RemotePicoW_04.py、config.pyの必要な部分をご自身の設定に変更
+b. RemotePicoW_04.pyをmain.pyに改名し、picoWにアップロード
+c. config.pyをpicoWにアップロード
+d. lib_mqtt.pyをpicoWにアップロード
+
+
+streamlit側
+
+アカウントの設定等行った上で、
+a. githubにstreamlit用のリポジトリを作成
+B. そのリポジトリに
+　　web_RemotePicoW.py
+　　requirements.txt
+　　を保存する。
+c. streamlitでweb_RemotePicoW.pyを指定し、
+　　URLを設定して、でブロイする。
+d. secrets.tomlをpicoWと同じ設定とする
+e. streamlitで設定でSecretsにsecrets.tomlの内容をコピーする。
+　  (注:secrets.tomlはgithubには載せないこと)
