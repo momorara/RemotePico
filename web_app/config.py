@@ -7,8 +7,8 @@ v1.0
 
 def ID_PASS():
     # wifiのssidとパスワード
-    ssid        = 'TKJ'
-    password    = '19601121'
+    ssid        = 'abc'
+    password    = 'abcdef'
     return ssid,password
 
 def secret_keys():
