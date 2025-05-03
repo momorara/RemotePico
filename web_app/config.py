@@ -21,7 +21,7 @@ def secret_keys():
     sec_code_org = "test1"
 
     # mqttのアドレスのようなもの
-    MQTT_TOPIC = b"tkj/remote/2025/test123"  # 文字列ではなくバイト列にすること
+    MQTT_TOPIC = b"tkj/remote/test123"  # 文字列ではなくバイト列にすること
 
     return henkan,sec_code_org,MQTT_TOPIC
 
