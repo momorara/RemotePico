@@ -26,6 +26,8 @@ RaspberryPi picoで学習リモコンを作ります。
 2025/1/30 以前v1.19.1付近のファームで試したところ動作しませんでしが、最新版RPI_PICO-20241129-v1.24.1.uf2 では動作しました。
   また、picoWでも試しましたが、動作しました。<br>
 2025/04/19 picoWにてファームウェア(RPI_PICO_W-20250415-v1.25.0.uf2)　で動作確認ok<br>
+2025/08/12 picoにてファームウェア(RPI_PICO-20250809-v1.26.0.uf2)　で動作確認ok<br>
+2025/08/12 picoWにてファームウェア(RPI_PICO_W-20250809-v1.26.0.uf2)　で動作確認ok<br>
 
 <h4><<ファームウェア置き場>></h4>
 https://micropython.org/download/RPI_PICO/ <br>
