@@ -56,8 +56,8 @@ mainの頭の方で設定できるので、自由に設定してください。<
 詳細はweb_appの書類を参照ください。 <br>
 
 -------------------------------------------
-基板の販売について、以下のショップにて扱っています。
-BASEショップ
-https://raspi.thebase.in/
-スイッチサイエンス
-https://www.switch-science.com/search?q=tkj
+基板の販売について、以下のショップにて扱っています。<br>
+BASEショップ<br>
+https://raspi.thebase.in/<br>
+スイッチサイエンス<br>
+https://www.switch-science.com/search?q=tkj<br>
