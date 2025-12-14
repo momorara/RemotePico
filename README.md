@@ -28,6 +28,7 @@ RaspberryPi picoで学習リモコンを作ります。
 2025/04/19 picoWにてファームウェア(RPI_PICO_W-20250415-v1.25.0.uf2)　で動作確認ok<br>
 2025/08/12 picoにてファームウェア(RPI_PICO-20250809-v1.26.0.uf2)　で動作確認ok<br>
 2025/08/12 picoWにてファームウェア(RPI_PICO_W-20250809-v1.26.0.uf2)　で動作確認ok<br>
+2025/12/14 pico,picoWにてファームウェア(RPI_PICO-20251209-v1.27.0.uf2)　で動作確認ok<br>
 
 <h4><<ファームウェア置き場>></h4>
 https://micropython.org/download/RPI_PICO/ <br>
