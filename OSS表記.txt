@@ -1,0 +1,5 @@
+This product uses MicroPython.
+MicroPython is licensed under the MIT License.
+
+本製品は MicroPython を使用しています。
+MicroPython は MIT License のもとで提供されています。
