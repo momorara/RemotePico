@@ -56,7 +56,10 @@ mainの頭の方で設定できるので、自由に設定してください。<
 ただ、設定などに若干の技術的なハードルがあります。 <br>
 詳細はweb_appの書類を参照ください。 <br>
 
--------------------------------------------
+-------------------------------------------<br>
+Raspberry Pi sensor expansion board<br>
+Python example included<br>
+Purchase here:<br>
 基板の販売について、以下のショップにて扱っています。<br>
 BASEショップ<br>
 https://raspi.thebase.in/<br>
