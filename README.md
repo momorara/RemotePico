@@ -5,7 +5,6 @@ RemotePy for pico
 プログラム概要
 RaspberryPi picoで学習リモコンを作ります。<br>
 現在の基板は、丸みを帯びた形状となっています。<br>
-　
 <h4><<概要>></h4>
 　Raspberry Pi picoを使った学習リモコン<br>
 　6つのタクトスイッチにリモコン信号を記憶できます。<br>
